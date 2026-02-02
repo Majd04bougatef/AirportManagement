@@ -1,0 +1,11 @@
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/bin/Debug/net10.0/AM.ApplicationCore.deps.json
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/bin/Debug/net10.0/AM.ApplicationCore.dll
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/bin/Debug/net10.0/AM.ApplicationCore.pdb
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.AssemblyInfoInputs.cache
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.AssemblyInfo.cs
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.csproj.CoreCompileInputs.cache
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.dll
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/refint/AM.ApplicationCore.dll
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.pdb
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/ref/AM.ApplicationCore.dll

@@ -1,0 +1,44 @@
+﻿// See https://aka.ms/new-console-template for more information
+using System.Net.Quic;
+using AM.ApplicationCore.Domain;
+Plane p = new Plane
+{
+    PlaneId = 1,
+    Capacity = 250,
+    ManufactureDate = new DateTime(2015, 03, 15),
+    PlaneType = PlaneType.Boeing
+};
+Plane p2 = new Plane
+{
+    PlaneId = 2,
+    Capacity = 300,
+    ManufactureDate = new DateTime(2018, 07, 22),
+    PlaneType = PlaneType.Airbus
+};
+p2.Capacity = 300;
+p2.ManufactureDate = new DateTime(2018, 07, 22);
+p2.PlaneType = PlaneType.Airbus;
+
+Plane p3 = new Plane()
+{
+    PlaneId = 3,
+    Capacity = 200,
+    ManufactureDate = new DateTime(2012, 11, 05),
+    PlaneType = PlaneType.Boeing
+};
+Console.WriteLine(p);
+Passenger pas = new Passenger
+{
+    FirstName = "John",
+    LastName = "Doe",
+    PassportNumber = "A1234567",
+    EmailAddress = "johndoe@example.com",
+    TelNumber = "123-456-7890",
+    BirthDate = new DateTime(1990, 01, 01)
+};
+Console.WriteLine(pas);
+Console.WriteLine(pas.CheckProfile("Doe", "John"));
+Console.WriteLine(pas.CheckProfile("Doe", "John", "johndoe@example.com"));
+
+Console.WriteLine(pas.login("Doe", "John"));
+Console.WriteLine(pas.login("Doe", "John", "johndoe@example.com"));
