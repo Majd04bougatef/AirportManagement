@@ -5,6 +5,6 @@ namespace AM.ApplicationCore.Interfaces
 {
     public interface IFlightMethods
     {
-        List<Flight> Flights { get; set; }
+        public IEnumerable<DateTime> GetFlightsDate (string destination);
     }
 }

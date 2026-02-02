@@ -13,7 +13,7 @@ namespace AM.ApplicationCore.Domain
 
         // Navigation Properties
         public Plane Plane { get; set; }
-        public Passenger Passenger { get; set; }
+        public ICollection<Passenger> Passengers { get; set; }
 
         public override string ToString()
         {
