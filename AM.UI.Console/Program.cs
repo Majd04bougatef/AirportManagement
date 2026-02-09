@@ -59,3 +59,15 @@ flightMethods.Flights = TestData.listFlights;
 flightMethods.GetFlights("destination", "Madrid");
 Console.WriteLine("**********************");
 flightMethods.showFlightDetails(TestData.Airbusplane);
+
+Console.WriteLine("********************** Nmber flights start date 2022-03-01");
+Console.WriteLine(flightMethods.ProgrammedFlightNumber(new DateTime(2022, 03, 01)));
+
+
+
+Console.WriteLine("**********************");
+Console.WriteLine("Senior travellers of flight1");
+foreach (var item in flightMethods.seniorTravellers(TestData.flight1))
+{
+    Console.WriteLine(item);
+}

@@ -7,7 +7,8 @@ namespace AM.ApplicationCore.Interfaces
     {
         public IEnumerable<DateTime> GetFlightsDate (string destination);
         public void GetFlights(string filterType , string filtervvalue);
-
         void showFlightDetails(Plane plane);
+        int ProgrammedFlightNumber(DateTime startDate);
+        IEnumerable<Traveller> seniorTravellers(Flight flight);
     }
 }
