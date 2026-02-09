@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Net.Quic;
 using AM.ApplicationCore.Domain;
+using AM.ApplicationCore.Services;
 Plane p = new Plane
 {
     PlaneId = 1,
@@ -42,3 +43,19 @@ Console.WriteLine(pas.CheckProfile("Doe", "John", "johndoe@example.com"));
 
 Console.WriteLine(pas.login("Doe", "John"));
 Console.WriteLine(pas.login("Doe", "John", "johndoe@example.com"));
+
+
+//instance de service
+FlightMethods flightMethods = new FlightMethods();
+
+//alimenter listeflights
+flightMethods.Flights = TestData.listFlights;
+
+/*foreach (var item in flightMethods.GetFlightsDate("Paris"))
+{
+    Console.WriteLine(item);
+}*/
+
+flightMethods.GetFlights("destination", "Madrid");
+Console.WriteLine("**********************");
+flightMethods.showFlightDetails(TestData.Airbusplane);

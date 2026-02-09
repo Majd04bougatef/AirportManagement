@@ -16,3 +16,4 @@
 /Users/majdbougatef/Desktop/AirportManagement/AM.UI.Console/obj/Debug/net10.0/AM.UI.Console.pdb
 /Users/majdbougatef/Desktop/AirportManagement/AM.UI.Console/obj/Debug/net10.0/AM.UI.Console.genruntimeconfig.cache
 /Users/majdbougatef/Desktop/AirportManagement/AM.UI.Console/obj/Debug/net10.0/ref/AM.UI.Console.dll
+/Users/majdbougatef/Desktop/AirportManagement/AM.UI.Console/obj/Debug/net10.0/AM.UI.Console.sourcelink.json
