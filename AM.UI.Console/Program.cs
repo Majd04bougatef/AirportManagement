@@ -71,3 +71,15 @@ foreach (var item in flightMethods.seniorTravellers(TestData.flight1))
 {
     Console.WriteLine(item);
 }
+
+
+Console.WriteLine("**********To Upper ************");
+Passenger pp = new Passenger    
+{
+    FirstName = "majd",
+    LastName = "bougatef",
+    PassportNumber = "A1234567",
+    EmailAddress = "azazaz"
+};
+pp.UpperFullName();
+Console.WriteLine(pp.FirstName);
