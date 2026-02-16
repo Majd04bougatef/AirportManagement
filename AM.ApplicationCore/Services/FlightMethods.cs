@@ -115,5 +115,35 @@ namespace AM.ApplicationCore.Services
 
             Console.WriteLine(Flights.Where(f => f.Plane == plane).Select(f => new { f.FlightDate, f.Destination }));
         }
+        public Double DurationAverage(string Destination)
+        {
+            return Flights
+                .Where(f => f.Destination == Destination)
+                .Average(f => f.EstimatedDuration);
+        }
+
+        public IEnumerable<Flight> OrderedDurationFlights()
+        {
+            return Flights
+                .OrderByDescending(f => f.EstimatedDuration);
+        }
+        
+        public void DestinationGroupedFlights()
+        {
+            var flightsEnumerable = Flights
+                .OrderBy(f => f.Destination)
+                .ThenBy(f => f.FlightDate)
+                .GroupBy(f => f.Destination);
+            
+            foreach (var group in flightsEnumerable)
+            {
+                Console.WriteLine("Destination : " + group.Key);
+                foreach (var flight in group)
+                {
+                    Console.WriteLine("Décollage : " + flight.FlightDate);
+                }
+            }
+        }
+
     }
 }

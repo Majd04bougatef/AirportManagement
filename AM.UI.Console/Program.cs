@@ -83,3 +83,6 @@ Passenger pp = new Passenger
 };
 pp.UpperFullName();
 Console.WriteLine(pp.FirstName);
+
+Console.WriteLine("duration average :" + flightMethods.DurationAverage("Paris"));
+flightMethods.DestinationGroupedFlights();
