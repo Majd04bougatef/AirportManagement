@@ -4,6 +4,7 @@ namespace AM.ApplicationCore.Domain
 {
     public class Passenger
     {
+        public int PassengerId { get; set; }
         public DateTime BirthDate { get; set; }
         public string PassportNumber { get; set; }
         public string EmailAddress { get; set; }

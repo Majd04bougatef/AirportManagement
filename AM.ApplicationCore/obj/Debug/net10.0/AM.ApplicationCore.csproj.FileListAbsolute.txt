@@ -10,3 +10,4 @@
 /Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.pdb
 /Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/ref/AM.ApplicationCore.dll
 /Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.sourcelink.json
+/Users/majdbougatef/Desktop/AirportManagement/AM.ApplicationCore/obj/Debug/net10.0/AM.ApplicationCore.csproj.AssemblyReference.cache

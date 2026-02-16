@@ -10,6 +10,7 @@ namespace AM.ApplicationCore.Domain
         public DateTime FlightDate { get; set; }
         public DateTime EffectiveArrival { get; set; }
         public double EstimatedDuration { get; set; }
+        public string AirlineLogo { get; set; }
 
         // Navigation Properties
         public Plane Plane { get; set; }
