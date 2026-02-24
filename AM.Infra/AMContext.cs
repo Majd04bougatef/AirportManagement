@@ -20,6 +20,16 @@ namespace AM.Infra
             optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=AM4SIM1;User Id=sa;Password=Adminadmin@123!;TrustServerCertificate=True;");
         }
         
-        
+        //3 Apply Fluent API configurations
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Apply PlaneConfiguration
+            modelBuilder.ApplyConfiguration(new Configurations.PlaneConfiguration());
+            
+            // Apply FlightConfiguration
+            modelBuilder.ApplyConfiguration(new Configurations.FlightConfiguration());
+            
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
