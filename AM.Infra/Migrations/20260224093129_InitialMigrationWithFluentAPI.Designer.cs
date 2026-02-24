@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AM.Infra.Migrations
 {
     [DbContext(typeof(AMContext))]
-    [Migration("20260224092919_FluentApiConfigurations")]
-    partial class FluentApiConfigurations
+    [Migration("20260224093129_InitialMigrationWithFluentAPI")]
+    partial class InitialMigrationWithFluentAPI
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
