@@ -13,11 +13,14 @@ namespace AM.Infra
         public DbSet<Passenger> Passengers { get; set; }
         public DbSet<Traveller> Travellers { get; set; }
         public DbSet<Staff> Staffs { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<ReservationTicket> ReservationTickets { get; set; }
 
         //2 Constructor
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=AM4SIM1;User Id=sa;Password=Adminadmin@123!;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=AM4SIM1;User Id=sa;Password=Adminadmin@123!;TrustServerCertificate=True;MultipleActiveResultSets=true;");
+            optionsBuilder.UseLazyLoadingProxies();
         }
         
         //3 Apply Fluent API configurations

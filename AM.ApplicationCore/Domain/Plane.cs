@@ -11,7 +11,7 @@ namespace AM.ApplicationCore.Domain
         public PlaneType PlaneType { get; set; }
 
         // Navigation Property (1 - *)
-        public ICollection<Flight> Flights { get; set; }
+        public virtual ICollection<Flight> Flights { get; set; }
 
 
         public Plane()

@@ -2,6 +2,7 @@
 using System.Net.Quic;
 using AM.ApplicationCore.Domain;
 using AM.ApplicationCore.Services;
+using AM.Infra;
 Plane p = new Plane
 {
     PlaneId = 1,
@@ -86,3 +87,19 @@ Console.WriteLine(pp.FirstName);
 
 Console.WriteLine("duration average :" + flightMethods.DurationAverage("Paris"));
 flightMethods.DestinationGroupedFlights();
+
+
+
+Console.WriteLine("*********Base de données***********");
+
+AMContext context = new AMContext();
+//context.Planes.Add(TestData.Airbusplane); 
+//context.Flights.Add(TestData.flight2);
+
+foreach (var item in context.Flights)
+{
+    Console.WriteLine("destination :" + item.Destination);  
+    Console.WriteLine("plane Capacity :" + item.Plane.Capacity);
+}
+
+context.SaveChanges();      

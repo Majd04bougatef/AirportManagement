@@ -13,8 +13,8 @@ namespace AM.ApplicationCore.Domain
         public string AirlineLogo { get; set; }
 
         // Navigation Properties
-        public Plane Plane { get; set; }
-        public ICollection<Passenger> Passengers { get; set; }
+        public virtual Plane Plane { get; set; }
+        public virtual ICollection<Passenger> Passengers { get; set; }
 
         public override string ToString()
         {

@@ -16,8 +16,8 @@ namespace AM.ApplicationCore.Domain
        public int FkTicket { get; set; }
 
        
-       public Passenger Passenger { get; set; }
-       public Ticket Ticket { get; set; }    
+       public virtual Passenger Passenger { get; set; }
+       public virtual Ticket Ticket { get; set; }    
 
     }
 }

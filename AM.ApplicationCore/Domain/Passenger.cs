@@ -17,9 +17,9 @@ namespace AM.ApplicationCore.Domain
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string TelNumber { get; set; }
-        public ICollection<Flight> Flights { get; set; }
+        public virtual ICollection<Flight> Flights { get; set; }
 
-        public ICollection<ReservationTicket> Reservations { get; set; }
+        public virtual ICollection<ReservationTicket> Reservations { get; set; }
 
         public override string ToString()
         {

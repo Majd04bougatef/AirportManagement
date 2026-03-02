@@ -9,7 +9,7 @@ namespace AM.ApplicationCore.Domain
        public string Destination { get; set; }
        public int Id { get; set; }
 
-        public ICollection<ReservationTicket> Reservations { get; set; }
+        public virtual ICollection<ReservationTicket> Reservations { get; set; }
 
 
     }
