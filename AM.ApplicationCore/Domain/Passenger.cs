@@ -19,6 +19,8 @@ namespace AM.ApplicationCore.Domain
         public string TelNumber { get; set; }
         public ICollection<Flight> Flights { get; set; }
 
+        public ICollection<ReservationTicket> Reservations { get; set; }
+
         public override string ToString()
         {
             return $"{FirstName} {LastName} - Passport: {PassportNumber}";
