@@ -28,6 +28,9 @@ namespace AM.Infra
             
             // Apply FlightConfiguration
             modelBuilder.ApplyConfiguration(new Configurations.FlightConfiguration());
+
+            modelBuilder.Entity<ReservationTicket>()
+                .HasKey(rt => new { rt.FkPassenger, rt.FkTicket, rt.DateReservation });
             
             base.OnModelCreating(modelBuilder);
         }
